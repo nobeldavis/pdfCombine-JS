@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #615EFC;
+    color: #ffffff;
+    display: flex;
+    
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700; 
+    font-size: 1.8rem;
+}
+
+#pdfForm {
+    background: rgba(255, 255, 255, 0.847);
+    border-radius: 18px;
+    padding: 20px;
+    width: 30vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #333;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px 0;
+}
+
+#pdfList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+#pdfList li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #00000024;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: move;
+    transition: background-color 0.3s ease;
+}
+
+#pdfList li:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    background-color: #615EFC;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1029e9;
+}
+
+#progressContainer {
+    display: none;
+    margin-top: 20px;
+}
+
+#progressBar {
+    width: 100%;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+#centerText {
+    text-align: center;
+}
+
+footer {
+    margin-top:auto;
+    text-align: center;
+    padding: 1px 0;
+    /* background-color: rgba(255, 255, 255, 0.847); */
+    color: #ffffff;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    #pdfForm {
+        width: 80vw;
+    }
+}
